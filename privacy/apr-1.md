@@ -70,11 +70,11 @@ $$u_i(a) \geq u_i\left(a_i^{\prime}, a_{-i}\right)-\epsilon$$
 Every agent is simultaneously playing an (approximate) best response to what the other agents are doing, assuming they are playing according to $a$. This work showed that if we could compute an approximate equilibrium of the game under the constraint of differential privacy, then truthful reporting, followed by taking the suggested action of the coordination device would be a Nash equilibrium. 
 
 # Key Findings
-In examining the various facets of differential privacy, especially the $\varepsilon$-differential privacy ($\varepsilon$-DP) and the ($\varepsilon,\delta$)-differential privacy ($\varepsilon,\delta$)-DP, alongside the canonical mechanisms like the Gaussian mechanism designed to enforce these privacy standards, several key findings emerge. These findings not only shed light on the theoretical underpinnings of differential privacy but also highlight its practical implications and potential limitations.
+In examining the various facets of differential privacy, especially the $\varepsilon$-differential privacy ($\varepsilon$-DP) and the ($\varepsilon,\delta$)-differential privacy ($\varepsilon,\delta$)-DP, alongside mechanisms like the Gaussian and Laplace mechanisms designed to enforce these privacy standards that protects individual privacy in data analysis, several key findings such as theoretical baselines of differential privacy and its practical implications and potential limitations can be found.
 
 Efficacy of Differential Privacy Mechanisms
 
-One of the pivotal findings is the effectiveness of differential privacy mechanisms, particularly the Gaussian mechanism, in safeguarding individual data. The mathematical rigor provided by differential privacy ensures a quantifiable measure of privacy, offering a solid foundation for privacy-preserving data analysis. This is crucial in an era where data breaches are increasingly common, and traditional data protection methods have shown limitations.
+One of the pivotal findings is the effectiveness of these differential privacy mechanisms, particularly the Gaussian mechanism, in protecting individual data. The Gaussian mechanism operates by adding noise calibrated to the $\ell_2$ sensitivity of a function, $\Delta_2f$, which is a measure of the maximum change in the function's output that any single individual's data can cause. This is formalized as: $$ \sigma \geq \frac{c\Delta_2f}{\varepsilon} $$This is crucial in an era where data breaches are increasingly common, and traditional data protection methods have shown limitations.
 
 Flexibility and Practical Application
 
